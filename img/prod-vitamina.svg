@@ -1,0 +1,49 @@
+<svg width="155" height="114" viewBox="0 0 155 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Productos ">
+<g id="Contenido">
+<g id="Group">
+<g id="productos/vitamina-c-2000-mg-2">
+<path id="Vector" d="M141 0H14C6.26801 0 0 6.26801 0 14V98C0 105.732 6.26801 112 14 112H141C148.732 112 155 105.732 155 98V14C155 6.26801 148.732 0 141 0Z" fill="url(#paint0_linear_0_1)"/>
+<g id="Vector_2" opacity="0.6" filter="url(#filter0_f_0_1)">
+<path d="M77.5 97.4399C104.893 97.4399 127.1 81.3939 127.1 61.6C127.1 41.8061 104.893 25.76 77.5 25.76C50.1067 25.76 27.9 41.8061 27.9 61.6C27.9 81.3939 50.1067 97.4399 77.5 97.4399Z" fill="white"/>
+</g>
+<g id="Group_2">
+<g id="Vector_3" opacity="0.2" filter="url(#filter1_f_0_1)">
+<path d="M77.5 102.7C94.7313 102.7 108.7 100.255 108.7 97.24C108.7 94.2245 94.7313 91.78 77.5 91.78C60.2688 91.78 46.3 94.2245 46.3 97.24C46.3 100.255 60.2688 102.7 77.5 102.7Z" fill="#002941"/>
+</g>
+<path id="Vector_4" d="M86.0801 33.28H68.9201C62.4584 33.28 57.2201 38.5183 57.2201 44.98V73.06C57.2201 79.5217 62.4584 84.76 68.9201 84.76H86.0801C92.5418 84.76 97.7801 79.5217 97.7801 73.06V44.98C97.7801 38.5183 92.5418 33.28 86.0801 33.28Z" fill="url(#paint1_linear_0_1)"/>
+<path id="Vector_5" d="M87.64 17.68H67.36C64.3445 17.68 61.9 20.1245 61.9 23.14V29.38C61.9 32.3955 64.3445 34.84 67.36 34.84H87.64C90.6555 34.84 93.1 32.3955 93.1 29.38V23.14C93.1 20.1245 90.6555 17.68 87.64 17.68Z" fill="url(#paint2_linear_0_1)"/>
+<path id="Vector_6" opacity="0.92" d="M97.7801 47.32H57.2201V70.72H97.7801V47.32Z" fill="white"/>
+<path id="Vector_7" d="M77.5001 66.04C81.3771 66.04 84.5201 62.897 84.5201 59.02C84.5201 55.143 81.3771 52 77.5001 52C73.6231 52 70.4801 55.143 70.4801 59.02C70.4801 62.897 73.6231 66.04 77.5001 66.04Z" fill="#FF9A5C"/>
+<path id="Vector_8" d="M74.38 55.9C78.54 55.38 80.62 56.42 80.62 59.02C80.62 61.62 78.54 62.66 74.38 62.14" stroke-width="1.872" stroke-linecap="round" stroke="white"/>
+<path id="Vector_9" opacity="0.45" d="M64.24 53.56C65.9631 53.56 67.36 49.3694 67.36 44.2C67.36 39.0306 65.9631 34.84 64.24 34.84C62.5169 34.84 61.12 39.0306 61.12 44.2C61.12 49.3694 62.5169 53.56 64.24 53.56Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_1" x="13.9" y="11.76" width="127.2" height="99.6799" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="7" result="effect1_foregroundBlur_0_1"/>
+</filter>
+<filter id="filter1_f_0_1" x="35.38" y="80.86" width="84.24" height="32.76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.46" result="effect1_foregroundBlur_0_1"/>
+</filter>
+<linearGradient id="paint0_linear_0_1" x1="0" y1="0" x2="106.337" y2="147.163" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EAF6FB"/>
+<stop offset="1" stop-color="#C8E6F1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_1" x1="57.2201" y1="33.28" x2="107.271" y2="72.714" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD3AE"/>
+<stop offset="1" stop-color="#FF9A5C"/>
+</linearGradient>
+<linearGradient id="paint2_linear_0_1" x1="61.9" y1="17.68" x2="76.3922" y2="44.0293" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0B4264"/>
+<stop offset="1" stop-color="#002941"/>
+</linearGradient>
+</defs>
+</svg>
