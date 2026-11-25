@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuvic · Compara precios en el campus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="inicio">
+      <section class="hero">
+        <h1 class="hero__titulo">Compara precios <span>en el campus</span></h1>
+        <p class="hero__texto">Encuentra dónde sale más barato lo que necesitas, sin salir de la universidad.</p>
+
+        <a class="buscador" href="buscar.html">
+          <svg width="17" height="17" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <circle cx="9.5" cy="9.5" r="7.6" stroke="#4F6B7C" stroke-width="2.2"/>
+            <path d="M15.2 15.2L20 20" stroke="#4F6B7C" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+          <span class="buscador__texto">Busca un producto</span>
+          <span class="buscador__boton">Buscar</span>
+        </a>
+
+        <nav class="chips" aria-label="Categorías">
+          <a class="chip" href="mapa.html?cat=farmacias">Farmacias</a>
+          <a class="chip" href="mapa.html?cat=librerias">Librerías</a>
+          <a class="chip" href="mapa.html?cat=copias">Copias</a>
+          <a class="chip" href="mapa.html?cat=florerias">Florerías</a>
+          <a class="chip" href="mapa.html?cat=salones">Salones</a>
+          <a class="chip" href="mapa.html?cat=barberias">Barberías</a>
+          <a class="chip" href="mapa.html?cat=lavanderias">Lavanderías</a>
+        </nav>
+      </section>
+
+      <div class="contenido" style="padding-top: 9px;">
+        <section>
+          <div class="fila-titulo">
+            <h2 class="titulo-seccion">Productos más buscados</h2>
+            <a class="enlace-rojo" href="productos.html">Ver todos</a>
+          </div>
+          <div class="grilla-productos mt-8" id="mas-buscados"></div>
+        </section>
+
+        <section class="mt-24">
+          <h2 class="titulo-seccion">Cómo funciona</h2>
+          <div class="pasos mt-8">
+            <a class="tarjeta paso" href="buscar.html">
+              <span class="paso__numero">1</span>
+              <div>
+                <h3 class="paso__titulo">Busca un producto</h3>
+                <p class="paso__texto">Escribe lo que necesitas o elige una categoría.</p>
+              </div>
+            </a>
+            <div class="tarjeta paso">
+              <span class="paso__numero">2</span>
+              <div>
+                <h3 class="paso__titulo">Compara precios</h3>
+                <p class="paso__texto">Mira el precio en cada comercio, del menor<br>al mayor.</p>
+              </div>
+            </div>
+            <div class="tarjeta paso">
+              <span class="paso__numero">3</span>
+              <div>
+                <h3 class="paso__titulo">Ve al comercio</h3>
+                <p class="paso__texto">Ábrelo en el mapa y llega con Google Maps.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-24">
+          <h2 class="titulo-seccion">Comercios cerca</h2>
+          <div class="lista mt-8">
+            <a class="tarjeta fila" href="farmacia-real.html">
+              <img class="fila__foto" src="img/foto-farmacia-real.png" alt="">
+              <div class="fila__texto">
+                <h3 class="fila__nombre">Farmacia Real</h3>
+                <p class="fila__detalle">0.2 km · 3 min a pie</p>
+              </div>
+              <span class="flecha" aria-hidden="true">›</span>
+            </a>
+            <a class="tarjeta fila" href="comercio-sin-producto.html">
+              <img class="fila__foto" src="img/foto-libreria-universitaria.png" alt="">
+              <div class="fila__texto">
+                <h3 class="fila__nombre">Librería Universitaria</h3>
+                <p class="fila__detalle">0.3 km · 2 min a pie</p>
+              </div>
+              <span class="flecha" aria-hidden="true">›</span>
+            </a>
+            <a class="tarjeta fila" href="mapa.html?cat=copias">
+              <img class="fila__foto" src="img/foto-centro-copias-uca.jpg" alt="">
+              <div class="fila__texto">
+                <h3 class="fila__nombre">Centro de copias UCA</h3>
+                <p class="fila__detalle">0.4 km · 5 min a pie</p>
+              </div>
+              <span class="flecha" aria-hidden="true">›</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="banner-mapa mt-24">
+          <h2 class="banner-mapa__titulo">Encuentra comercios <span>en el mapa</span></h2>
+          <p class="banner-mapa__texto">Con ubicación y ruta de Google Maps.</p>
+          <a class="banner-mapa__boton" href="mapa.html?cat=barberias">Abrir mapa</a>
+        </section>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script>
+    const destacados = ["paracetamol", "copias", "rosas", "corte"];
+    document.getElementById("mas-buscados").innerHTML = destacados
+      .map(id => tarjetaProducto(PRODUCTOS.find(p => p.id === id)))
+      .join("");
+  </script>
+</body>
+</html>

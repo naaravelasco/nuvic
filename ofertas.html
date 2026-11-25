@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Ofertas</h1>
+      <p class="bajada">Ahorra más en los comercios del campus</p>
+
+      <section class="tarjeta-oscura banner-oferta mt-12 oculto" id="banner-miembro">
+        <span class="check" aria-hidden="true"></span>
+        <div><h2>Eres miembro Nuvic Plus</h2><p id="hasta-ofertas">Activo hasta el 23 dic 2026</p></div>
+      </section>
+      <section class="tarjeta-oscura banner-bloqueo mt-12" id="banner-bloqueo">
+        <h2>Desbloquea todas las ofertas</h2>
+        <p class="texto-celeste">Con Nuvic Plus por $3.99 al mes</p>
+        <a class="boton boton--rojo" href="membresia.html">Hazte miembro</a>
+      </section>
+
+      <div class="chips mt-20" id="filtros-ofertas" role="group" aria-label="Filtrar ofertas"></div>
+      <div class="lista mt-16" id="lista-ofertas"></div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

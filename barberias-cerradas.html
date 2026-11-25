@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barberías cercanas · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <nav class="migas" aria-label="Ruta"><a href="mapa.html?cat=farmacias">Mapa</a> › Barberías</nav>
+      <h1 class="nombre-producto mt-8">Barberías cercanas</h1>
+      <div class="zona-cerrada mt-8"><div class="icono-circulo" style="width:124px;height:124px;"><span style="width:88px;height:88px;"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true"><circle cx="21" cy="21" r="18.75" stroke="#002941" stroke-width="4.5"/><path d="M21 11v11l6 4" stroke="#FD6E6E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></div>
+      <h2 class="centrado mt-20" style="font-size:19px;">No hay comercios abiertos ahora</h2>
+      <p class="texto-centrado" style="font-size:12.5px;">Las barberías cerca de la UCA abren a las 8:00 am.</p>
+      <div class="lista mt-20">
+        <div class="tarjeta cerrado"><div><h3>Platinum Barbershop</h3><p>Abre mañana 8:00 am</p></div><span class="estado">Cerrado</span></div>
+        <div class="tarjeta cerrado"><div><h3>Gentlemen’s Barber</h3><p>Abre mañana 9:00 am</p></div><span class="estado">Cerrado</span></div>
+      </div>
+      <div class="botones mt-20">
+        <a class="boton boton--rojo" href="mapa.html?cat=farmacias">Ver farmacias abiertas</a>
+        <a class="boton boton--borde" href="mapa.html?cat=farmacias">Volver al mapa</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar contraseña · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <a class="volver" href="login.html">‹ Volver a iniciar sesión</a>
+      <div class="icono-circulo mt-24"><span><svg width="40" height="46" viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M10 20v-6a10 10 0 0 1 20 0v6" stroke="#002941" stroke-width="5"/><rect x="4" y="18" width="32" height="26" rx="5" fill="#002941"/><circle cx="20" cy="31" r="3.5" fill="#FD6E6E"/></svg></span></div>
+      <h1 class="titulo-centrado mt-16">¿Olvidaste tu contraseña?</h1>
+      <p class="texto-centrado">Escribe tu correo institucional y te enviaremos<br>un enlace para crear una nueva.</p>
+
+      <form class="formulario mt-24" id="form-olvide" novalidate>
+        <div class="campo">
+          <label for="correo">Correo institucional</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@uca.edu.sv" autocomplete="email">
+        </div>
+        <p class="alerta oculto" id="error-olvide" role="alert">Usa tu correo institucional que termina en @uca.edu.sv</p>
+        <button class="boton boton--rojo mt-16" type="submit" style="font-size:16px;">Enviar enlace</button>
+      </form>
+
+      <p class="pie-formulario mt-24">¿Ya la recordaste?<a href="login.html">Iniciar sesión</a></p>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/cuenta.js"></script>
+</body>
+</html>

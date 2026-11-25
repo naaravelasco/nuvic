@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nueva contraseña · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <div class="icono-circulo"><span><svg width="40" height="46" viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M10 20v-6a10 10 0 0 1 20 0v6" stroke="#002941" stroke-width="5"/><rect x="4" y="18" width="32" height="26" rx="5" fill="#002941"/><circle cx="20" cy="31" r="3.5" fill="#FD6E6E"/></svg></span></div>
+      <h1 class="titulo-centrado mt-16">Crea tu nueva contraseña</h1>
+      <p class="texto-centrado">Que sea distinta a las que usaste antes.</p>
+
+      <form class="formulario mt-16" id="form-nueva" novalidate>
+        <div class="campo">
+          <label for="clave">Nueva contraseña</label>
+          <input type="password" id="clave" name="clave" placeholder="Mínimo 8 caracteres" autocomplete="new-password">
+        </div>
+        <div class="campo">
+          <label for="confirmar">Confirmar contraseña</label>
+          <input type="password" id="confirmar" name="confirmar" placeholder="Repite tu contraseña" autocomplete="new-password">
+        </div>
+        <ul class="requisitos mt-16" aria-live="polite">
+          <li data-regla="largo">Mínimo 8 caracteres</li>
+          <li data-regla="mayuscula">Una letra mayúscula</li>
+          <li data-regla="numero">Un número</li>
+        </ul>
+        <p class="alerta oculto" id="error-nueva" role="alert"></p>
+        <button class="boton boton--rojo mt-16" type="submit" style="font-size:16px;">Guardar contraseña</button>
+      </form>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/cuenta.js"></script>
+</body>
+</html>

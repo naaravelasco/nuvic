@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado" data-sin-entrar></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Perfil</h1>
+
+      <section class="tarjeta perfil mt-8">
+        <span class="avatar">AM</span>
+        <div>
+          <h2 class="perfil__nombre">Ana Martínez</h2>
+          <p class="perfil__carrera">Ing. Informática · 2.º año</p>
+          <span class="verificada">Cuenta UCA verificada</span>
+        </div>
+      </section>
+
+      <div class="estadisticas mt-16">
+        <div class="tarjeta estadistica"><strong>357</strong><span>Puntos</span></div>
+        <div class="tarjeta estadistica"><strong>18</strong><span>Comparaciones</span></div>
+      </div>
+
+      <div class="lista mt-20">
+        <a class="tarjeta opcion" href="mi-lista.html"><h2>Mi lista</h2><p>4 productos guardados</p><span class="flecha" aria-hidden="true">›</span></a>
+        <a class="tarjeta opcion" href="mis-puntos.html"><h2>Historial de puntos</h2><p>Compras y canjes</p><span class="flecha" aria-hidden="true">›</span></a>
+        <a class="tarjeta opcion" href="membresia.html"><h2>Ayuda y soporte</h2><p>Preguntas frecuentes</p><span class="flecha" aria-hidden="true">›</span></a>
+      </div>
+
+      <a class="boton boton--borde mt-24" href="login.html" id="cerrar-sesion">Cerrar sesión</a>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/cuenta.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido" style="padding-top:18px;" id="detalle-oferta">
+      <nav class="migas" aria-label="Ruta"><a href="ofertas.html">Ofertas</a> › <span id="miga-oferta">20% en 20 copias</span></nav>
+      <div class="tarjeta imagen-producto mt-12" style="height:190px;">
+        <img id="imagen-oferta" src="img/comercios/oferta-copias-grande.png" alt="">
+        <span class="solo-miembros oculto" id="sello-miembros">Solo miembros</span>
+      </div>
+      <h1 class="nombre-producto mt-12" id="titulo-oferta">20% en 20 copias</h1>
+      <p class="bajada" style="font-size:12.5px;" id="comercio-oferta">Centro de copias UCA</p>
+
+      <div class="tarjeta resumen mt-12" id="datos-oferta"></div>
+
+      <h2 class="titulo-precios mt-20">Cómo usarla</h2>
+      <ol class="pasos-oferta mt-12">
+        <li>Toca "Activar oferta" para generar tu código.</li>
+        <li>Muéstralo en el comercio antes de pagar.</li>
+        <li>El descuento se aplica en tu compra.</li>
+      </ol>
+
+      <div class="botones mt-32">
+        <a class="boton boton--rojo" id="activar" href="oferta-activa.html" style="height:54px;font-size:16px;">Activar oferta</a>
+        <a class="boton boton--borde" id="ver-mapa" href="mapa.html?cat=copias" style="height:50px;font-size:14px;">Ver el comercio en el mapa</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

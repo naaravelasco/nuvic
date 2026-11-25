@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi lista · Librería La Ibérica · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Mi lista</h1>
+      <p class="bajada" style="font-size:13px;" id="subtitulo-lista">3 productos · Librería La Ibérica</p>
+
+      <div class="alerta-grande mt-12" id="aviso-lista" role="status">
+        <span class="alerta-grande__icono" aria-hidden="true">!</span>
+        <div><h2 style="font-size:13.5px;">1 producto ya no está disponible</h2><p>Lapicero azul Bic se agotó en Librería Universitaria. Te mostramos otra opción.</p></div>
+      </div>
+
+      <div class="lista mt-20" id="lista-libreria">
+        <div class="tarjeta fila fila--disponible">
+          <img class="fila__foto" src="img/comercios/resma-bond.png" alt="">
+          <div class="fila__texto"><p class="fila__nombre">Resma de papel bond</p><p class="fila__detalle">Librería La Ibérica</p></div>
+          <div class="precio-estado"><strong>$4.60</strong><span class="estado estado--ok">Disponible</span></div>
+        </div>
+        <div class="tarjeta fila fila--disponible">
+          <img class="fila__foto" src="img/comercios/cuaderno-universitario.png" alt="">
+          <div class="fila__texto"><p class="fila__nombre">Cuaderno universitario</p><p class="fila__detalle">Librería La Ibérica</p></div>
+          <div class="precio-estado"><strong>$1.85</strong><span class="estado estado--ok">Disponible</span></div>
+        </div>
+        <div class="tarjeta fila fila--disponible apagada" id="fila-lapicero">
+          <span class="cuadro-gris" style="width:64px;height:64px;font-weight:400;font-size:24px;" aria-hidden="true">✎</span>
+          <div class="fila__texto"><p class="fila__nombre">Lapicero azul</p><p class="fila__detalle">Librería La Ibérica</p></div>
+          <div class="precio-estado"><strong>$3.10</strong><span class="estado estado--no">No disponible</span></div>
+        </div>
+        <div class="tarjeta fila fila--disponible oculto" id="lapicero-nuevo">
+          <span class="cuadro-gris" style="width:64px;height:64px;font-weight:400;font-size:24px;background:#eaf6fb;" aria-hidden="true">✎</span>
+          <div class="fila__texto"><p class="fila__nombre">Lapicero azul</p><p class="fila__detalle">Librería y Papelería UCA</p></div>
+          <div class="precio-estado"><strong>$3.25</strong><span class="estado estado--ok">Disponible</span></div>
+        </div>
+      </div>
+
+      <div class="alternativa mt-16" id="alternativa">
+        <small>Disponible en otro comercio</small>
+        <h3>Librería y Papelería UCA</h3>
+        <p>UCA · 600 m</p>
+        <button class="cambiar" type="button" id="cambiar-aqui">Cambiar aquí</button>
+        <strong>$3.25</strong>
+      </div>
+      <button class="boton boton--borde mt-20" type="button" id="quitar-lapicero" style="width:100%;height:50px;font-size:14px;">Quitar de la lista</button>
+
+      <section class="tarjeta-oscura total-chico mt-20" aria-label="Total estimado">
+        <div><p class="texto-celeste" style="font-size:12.5px;">Total estimado</p><strong id="total-libreria">$6.45</strong></div>
+        <p class="texto-celeste" id="nota-total">sin el lapicero</p>
+      </section>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

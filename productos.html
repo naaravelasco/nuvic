@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Productos</h1>
+      <p class="bajada">11 productos para comparar</p>
+
+      <a class="buscador buscador--bajo mt-12" href="buscar.html">
+        <svg width="17" height="17" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <circle cx="9.5" cy="9.5" r="7.6" stroke="#4F6B7C" stroke-width="2.2"/>
+          <path d="M15.2 15.2L20 20" stroke="#4F6B7C" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="buscador__texto">Buscar producto</span>
+      </a>
+
+      <div class="chips mt-16" id="filtros" role="group" aria-label="Filtrar productos">
+        <button class="chip activo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button class="chip" type="button" data-filtro="medicinas" aria-pressed="false">Medicinas</button>
+        <button class="chip" type="button" data-filtro="copias" aria-pressed="false">Copias</button>
+        <button class="chip" type="button" data-filtro="flores" aria-pressed="false">Flores</button>
+      </div>
+
+      <div class="grilla-productos mt-20" id="grilla"></div>
+
+      <a class="boton boton--borde mt-24" style="height: 50px;" href="buscar.html?q=lapicero%20rojo%20punta%20fina">Ver más productos</a>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script>
+    if (navigator.onLine === false) location.replace("sin-conexion.html");
+
+    const grilla = document.getElementById("grilla");
+    grilla.innerHTML = PRODUCTOS.map(tarjetaProducto).join("");
+
+    const filtros = document.querySelectorAll("#filtros .chip");
+    filtros.forEach(boton => {
+      boton.addEventListener("click", () => {
+        const elegido = boton.dataset.filtro;
+
+        filtros.forEach(b => {
+          const activo = b === boton;
+          b.classList.toggle("activo", activo);
+          b.setAttribute("aria-pressed", String(activo));
+        });
+
+        grilla.querySelectorAll(".producto").forEach(tarjeta => {
+          const mostrar = elegido === "todos" || tarjeta.dataset.filtro === elegido;
+          tarjeta.classList.toggle("oculto", !mostrar);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

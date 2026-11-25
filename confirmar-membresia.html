@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmar membresía · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <nav class="migas" aria-label="Ruta"><a href="membresia.html">Membresía</a> › Confirmar</nav>
+      <h1 class="nombre-producto mt-8">Confirmar membresía</h1>
+
+      <section class="tarjeta mt-8">
+        <div class="plan">
+          <span class="plan__icono" aria-hidden="true">★</span>
+          <div class="plan__info"><h2>Nuvic Plus</h2><p>1 Mes · renovación Mensual</p></div>
+          <span class="plan__precio">$3.99</span>
+        </div>
+        <div class="total-hoy">Total hoy<strong>$3.99</strong></div>
+      </section>
+
+      <h2 class="titulo-precios mt-24">Método de pago</h2>
+      <div class="metodo mt-8">Tarjeta de crédito o débito</div>
+
+      <form class="formulario mt-20" id="form-pago" novalidate>
+        <div class="campo">
+          <label for="tarjeta">Número de tarjeta</label>
+          <input type="text" id="tarjeta" name="tarjeta" placeholder="0000 0000 0000 0000" inputmode="numeric" autocomplete="off">
+        </div>
+        <div class="dos-campos">
+          <div class="campo"><label for="vence">Vencimiento</label><input type="text" id="vence" name="vence" placeholder="MM / AA" inputmode="numeric" autocomplete="off"></div>
+          <div class="campo"><label for="cvv">CVV</label><input type="text" id="cvv" name="cvv" placeholder="123" inputmode="numeric" autocomplete="off"></div>
+        </div>
+        <label class="casilla mt-16"><input type="checkbox" name="terminos">Acepto los términos de la membresía</label>
+        <p class="alerta oculto" id="error-pago" role="alert">Revisa los datos de la tarjeta y acepta los términos.</p>
+        <button class="boton boton--coral mt-16" type="submit" style="height:54px;font-size:16px;">Pagar $3.99</button>
+      </form>
+      <p class="nota-centrada mt-16">Se renueva cada mes. Puedes cancelar desde tu perfil.</p>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

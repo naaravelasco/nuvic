@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado" data-sin-entrar></header>
+
+    <main class="contenido">
+      <h1 class="titulo-cuenta">Entra con tu cuenta UCA</h1>
+      <p class="bajada">Para sumar y canjear tus puntos.</p>
+
+      <form class="formulario mt-24" id="form-login" novalidate>
+        <div class="campo">
+          <label for="correo">Correo institucional</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@uca.edu.sv" autocomplete="email">
+        </div>
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" placeholder="••••••••" autocomplete="current-password">
+        </div>
+        <p class="alerta oculto" id="error-login" role="alert">Correo o contraseña incorrectos.</p>
+        <a class="enlace-derecha mt-8" href="olvide-contrasena.html">¿Olvidaste tu contraseña?</a>
+        <button class="boton boton--coral mt-8" type="submit">Iniciar sesión</button>
+      </form>
+
+      <p class="separador mt-24">o continúa con</p>
+      <button class="boton boton--borde mt-16" type="button" id="btn-microsoft" style="width:100%;"><span class="microsoft" aria-hidden="true"><i style="background:#f25022"></i><i style="background:#7fba00"></i><i style="background:#00a4ef"></i><i style="background:#ffb900"></i></span>Cuenta UCA (Microsoft)</button>
+
+      <p class="pie-formulario mt-24">¿No tienes cuenta?<a href="crear-cuenta.html">Crear cuenta</a></p>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/cuenta.js"></script>
+</body>
+</html>

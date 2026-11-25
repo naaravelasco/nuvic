@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escanear QR · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <nav class="migas" aria-label="Ruta"><a href="index.html">Inicio</a> › <a href="mis-puntos.html">Mis puntos</a> › Escanear QR</nav>
+      <h1 class="nombre-producto mt-8">Escanear QR de compra</h1>
+      <p class="bajada" style="font-size:12.5px;">Después de comprar en un comercio participante, escanea el código que te muestra.</p>
+
+      <div class="visor mt-12" id="visor" role="button" tabindex="0" aria-label="Escanear el código QR">
+        <span class="esquina" aria-hidden="true"></span><span class="esquina" aria-hidden="true"></span><span class="esquina" aria-hidden="true"></span><span class="esquina" aria-hidden="true"></span>
+        <span class="visor__linea" aria-hidden="true"></span>
+        <p class="visor__texto">Apunta al código QR del comercio</p>
+      </div>
+
+      <div class="tarjeta fila mt-16" style="min-height:74px;">
+        <img class="fila__foto" style="width:58px;height:58px;" src="img/foto-farmacia-real.png" alt="">
+        <div class="fila__texto"><p class="fila__nombre">Farmacia Real</p><p class="fila__detalle">Paracetamol 500 mg · $10</p></div>
+        <span class="pildora" id="pildora-puntos" style="margin-right:8px;">+12 puntos</span>
+      </div>
+
+      <button class="boton boton--borde mt-20" type="button" id="btn-manual" style="width:100%;height:50px;">Ingresar código manual</button>
+      <form class="formulario mt-20 oculto" id="form-codigo" novalidate>
+        <div class="campo">
+          <label for="codigo">Código de la compra</label>
+          <div class="codigo-manual">
+            <input type="text" id="codigo" name="codigo" placeholder="Ej. NV-48213" autocomplete="off">
+            <button class="boton boton--rojo" type="submit">Validar</button>
+          </div>
+        </div>
+        <p class="alerta oculto" id="error-codigo" role="alert">El código debe tener al menos 6 caracteres.</p>
+      </form>
+      <p class="nota-centrada mt-20">Nuvic no vende: el pago lo haces en el comercio.</p>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi membresía · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Mi membresía</h1>
+
+      <section class="tarjeta-oscura mt-8" style="padding:20px;">
+        <span class="sello" style="position:static;">Nuvic Plus</span>
+        <div class="estado-membresia">
+          <div><strong>Activa</strong><p class="texto-celeste" style="font-size:12.5px;">Hasta el <span id="hasta">17 nov 2026</span></p></div>
+          <div style="text-align:right;"><strong style="font-size:18px;">$3.99</strong><p class="texto-celeste">Renovación mensual</p></div>
+        </div>
+      </section>
+
+      <div class="estadisticas mt-16">
+        <div class="tarjeta estadistica" style="height:92px;"><strong style="font-size:24px;">$12.40</strong><span>ahorrados</span></div>
+        <div class="tarjeta estadistica" style="height:92px;"><strong style="font-size:24px;">7</strong><span>ofertas usadas</span></div>
+      </div>
+
+      <h2 class="titulo-precios mt-24">Tus beneficios</h2>
+      <div class="lista mt-8" style="gap:8px;">
+        <div class="tarjeta beneficio beneficio--simple"><span class="check" aria-hidden="true"></span><div><h3>Ofertas exclusivas</h3></div></div>
+        <div class="tarjeta beneficio beneficio--simple"><span class="check" aria-hidden="true"></span><div><h3>Puntos x2 en cada compra</h3></div></div>
+        <div class="tarjeta beneficio beneficio--simple"><span class="check" aria-hidden="true"></span><div><h3>Alertas de precio</h3></div></div>
+        <div class="tarjeta beneficio beneficio--simple"><span class="check" aria-hidden="true"></span><div><h3>Recompensas solo para miembros</h3></div></div>
+      </div>
+
+      <div class="botones mt-24">
+        <a class="boton boton--rojo" href="ofertas.html">Ver ofertas</a>
+        <button class="boton boton--borde" type="button" id="cancelar-membresia" style="font-size:14px;">Cancelar membresía</button>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

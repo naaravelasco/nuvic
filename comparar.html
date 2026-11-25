@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paracetamol 500 mg · Comparar precios · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado" data-sin-entrar></header>
+
+    <main class="contenido" style="padding-top: 18px;">
+      <nav class="migas" aria-label="Ruta">
+        <a href="index.html">Inicio</a> › <a href="productos.html">Productos</a> › Paracetamol
+      </nav>
+
+      <div class="tarjeta imagen-producto mt-12">
+        <img src="img/prod-paracetamol-grande.svg" alt="Caja de paracetamol">
+        <span class="etiqueta">Ahorra hasta $0.70</span>
+      </div>
+
+      <h1 class="nombre-producto mt-12">Paracetamol 500 mg</h1>
+      <p class="bajada" style="font-size: 12px;">Caja de 10 tabletas · mismo producto en 3 comercios</p>
+
+      <div class="fila-titulo mt-20">
+        <h2 class="titulo-precios">Precios por comercio</h2>
+        <span class="migas">Menor a mayor</span>
+      </div>
+
+      <div class="lista mt-8">
+        <article class="tarjeta precio-comercio precio-comercio--mejor">
+          <img class="precio-comercio__foto" src="img/foto-farmacia-real.png" alt="">
+          <div class="precio-comercio__info">
+            <h3 class="precio-comercio__nombre">
+              <a class="enlace-tarjeta" href="farmacia-real.html">Farmacia Real</a>
+            </h3>
+            <p class="precio-comercio__distancia">0.2 km · 3 min a pie</p>
+            <a class="precio-comercio__llegar" href="https://www.google.com/maps/search/Farmacia%20UCA%20San%20Salvador" target="_blank" rel="noopener">Cómo llegar ›</a>
+          </div>
+          <p class="precio-comercio__precio">$10 <span class="etiqueta">Menor precio</span></p>
+        </article>
+
+        <article class="tarjeta precio-comercio">
+          <img class="precio-comercio__foto" src="img/foto-farmacia-sultana.png" alt="">
+          <div class="precio-comercio__info">
+            <h3 class="precio-comercio__nombre">
+              <a class="enlace-tarjeta" href="comercio.html">Farmacia la Sultana</a>
+            </h3>
+            <p class="precio-comercio__distancia">1.1 km · 5 min a pie</p>
+            <a class="precio-comercio__llegar" href="https://www.google.com/maps/search/Farmacia%20UCA%20San%20Salvador" target="_blank" rel="noopener">Cómo llegar ›</a>
+          </div>
+          <p class="precio-comercio__precio">$10.60</p>
+        </article>
+
+        <article class="tarjeta precio-comercio">
+          <img class="precio-comercio__foto" src="img/foto-farmacia-san-benito.png" alt="">
+          <div class="precio-comercio__info">
+            <h3 class="precio-comercio__nombre">
+              <a class="enlace-tarjeta" href="comercio.html">Farmacia San Benito</a>
+            </h3>
+            <p class="precio-comercio__distancia">2.3 km · 5 min a pie</p>
+            <a class="precio-comercio__llegar" href="https://www.google.com/maps/search/Farmacia%20UCA%20San%20Salvador" target="_blank" rel="noopener">Cómo llegar ›</a>
+          </div>
+          <p class="precio-comercio__precio">$11</p>
+        </article>
+      </div>
+
+      <div class="botones mt-20">
+        <a class="boton boton--rojo" href="mi-lista.html" onclick="agregarALista('paracetamol')">☆ Guardar en mi lista</a>
+        <a class="boton boton--borde" href="mapa.html?cat=farmacias">Ver en el mapa</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi lista · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Mi lista</h1>
+      <p class="bajada">Productos que quieres comparar</p>
+
+      <div class="lista mt-16" id="lista"></div>
+
+      <section class="total mt-24" aria-label="Resumen de la lista">
+        <p class="total__etiqueta">Total al menor precio de cada producto</p>
+        <div class="total__fila">
+          <p class="total__monto">$12.25</p>
+          <span class="total__ahorro">Ahorras hasta $1.25</span>
+        </div>
+        <p class="total__sin">Sin comparar: <strong>$13.50</strong></p>
+      </section>
+
+      <div class="botones mt-20">
+        <a class="boton boton--rojo" href="mapa.html?cat=barberias">Ver comercios en el mapa</a>
+        <a class="boton boton--borde" href="productos.html">Agregar más productos</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script>
+    const lista = document.getElementById("lista");
+    const iconoQuitar = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M2 2L14 14M14 2L2 14" stroke="#4F6B7C" stroke-width="2" stroke-linecap="round"/></svg>`;
+
+    function pintarLista() {
+      const ids = leerLista();
+      const articulos = ARTICULOS_LISTA.filter(a => ids.includes(a.id));
+
+      const vacia = !articulos.length;
+      document.querySelector(".total").classList.toggle("oculto", vacia);
+      document.querySelector(".botones").classList.toggle("oculto", vacia);
+      document.querySelector(".bajada").classList.toggle("oculto", vacia);
+      if (vacia) {
+        lista.innerHTML = `
+          <div class="estado-vacio">
+            <div class="icono-circulo" style="width:124px;height:124px;"><span style="width:88px;height:88px;">
+              <svg width="44" height="56" viewBox="0 0 44 56" fill="none" aria-hidden="true"><rect x="2.25" y="2.25" width="39.5" height="51.5" rx="6" stroke="#002941" stroke-width="4.5"/><path d="M12 24l10 10 10-10" stroke="#FD6E6E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span></div>
+            <h2>Tu lista está vacía</h2>
+            <p>Agrega productos para comparar su precio total.</p>
+          </div>
+          <div class="botones mt-32">
+            <a class="boton boton--rojo" href="productos.html">Buscar productos</a>
+            <a class="boton boton--borde" href="ofertas.html">Ver ofertas</a>
+          </div>`;
+        return;
+      }
+
+      lista.innerHTML = articulos.map(a => `
+        <article class="tarjeta fila fila--lista" data-id="${a.id}">
+          <img class="fila__foto" src="${a.imagen}" alt="">
+          <div class="fila__texto">
+            <h2 class="fila__nombre"><a class="enlace-tarjeta" href="${a.enlace}">${a.nombre}</a></h2>
+            <p class="fila__detalle">${a.comercio}</p>
+          </div>
+          <span class="fila__precio">${a.precio}</span>
+          <button class="quitar" type="button" aria-label="Quitar ${a.nombre} de mi lista">${iconoQuitar}</button>
+        </article>`).join("");
+    }
+
+    lista.addEventListener("click", e => {
+      const boton = e.target.closest(".quitar");
+      if (!boton) return;
+      const fila = boton.closest(".fila");
+      fila.classList.add("fila--saliendo");
+      setTimeout(() => {
+        guardarLista(leerLista().filter(id => id !== fila.dataset.id));
+        pintarLista();
+      }, 200);
+    });
+
+    pintarLista();
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Universitaria · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado" data-sin-entrar></header>
+
+    <main class="contenido">
+      <nav class="migas" aria-label="Ruta"><a href="mapa.html?cat=librerias">Mapa</a> › Librería Universitaria</nav>
+      <img class="portada mt-12" style="height:150px;" src="img/comercios/portada-libreria-universitaria.jpg" alt="Fachada de Librería Universitaria">
+      <h1 class="nombre-comercio mt-12" style="font-size:22px;">Librería Universitaria</h1>
+      <p class="bajada" style="font-size:12.5px;">Edificio central · Abierto hasta 6:00 pm</p>
+
+      <h2 class="titulo-precios mt-20">Productos en este comercio</h2>
+      <div class="lista mt-8">
+        <div class="tarjeta fila fila--disponible">
+          <img class="fila__foto" src="img/comercios/resma-bond.png" alt="">
+          <div class="fila__texto"><p class="fila__nombre">Resma de papel bond</p><p class="fila__detalle">500 hojas · carta</p></div>
+          <div class="precio-estado"><strong>$4.60</strong><span class="estado estado--ok">Disponible</span></div>
+        </div>
+        <div class="tarjeta fila fila--disponible apagada">
+          <span class="cuadro-gris" style="width:64px;height:64px;font-weight:400;font-size:24px;" aria-hidden="true">✎</span>
+          <div class="fila__texto"><p class="fila__nombre">Lapicero azul</p><p class="fila__detalle">Caja de 12</p></div>
+          <div class="precio-estado"><strong>$3.10</strong><span class="estado estado--no">No disponible</span></div>
+        </div>
+        <div class="tarjeta fila fila--disponible">
+          <img class="fila__foto" src="img/comercios/cuaderno-universitario.png" alt="">
+          <div class="fila__texto"><p class="fila__nombre">Cuaderno universitario</p><p class="fila__detalle">100 hojas</p></div>
+          <div class="precio-estado"><strong>$15</strong><span class="estado estado--ok">Disponible</span></div>
+        </div>
+      </div>
+
+      <div class="alerta-grande mt-16" role="status" style="padding:16px;">
+        <div><h2 style="font-size:13px;">Lapicero azul ya no está disponible</h2><p>Este comercio se quedó sin existencias.<br>Te avisamos cuando vuelva.</p></div>
+      </div>
+
+      <div class="botones mt-20">
+        <a class="boton boton--rojo" href="membresia.html">Avisarme cuando vuelva</a>
+        <a class="boton boton--borde" href="comparar-lapicero.html" style="font-size:13.5px;">Ver otro comercio con lapicero</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>

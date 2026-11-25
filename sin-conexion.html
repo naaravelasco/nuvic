@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sin conexión · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Productos</h1>
+      <div class="estado-vacio">
+        <div class="icono-circulo" style="width:124px;height:124px;"><span style="width:88px;height:88px;"><svg width="56" height="46" viewBox="0 0 56 46" fill="none" aria-hidden="true"><path d="M5 17a33 33 0 0 1 46 0M13 26a21 21 0 0 1 30 0M21 34a9 9 0 0 1 14 0" stroke="#002941" stroke-width="5" stroke-linecap="round"/><circle cx="28" cy="41" r="4" fill="#FD6E6E"/><path d="M8 4l40 40" stroke="#FD6E6E" stroke-width="5" stroke-linecap="round"/></svg></span></div>
+        <h2>No pudimos cargar los precios</h2>
+        <p>Revisa tu conexión a internet e inténtalo de nuevo.</p>
+      </div>
+      <button class="boton boton--rojo mt-32" type="button" id="reintentar" style="width:100%;">Reintentar</button>
+      <p class="nota-centrada mt-12 oculto" id="sigue-sin" role="status">Todavía no hay conexión.</p>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recompensa · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido" style="padding-top:18px;" id="pagina-canje">
+      <nav class="migas" aria-label="Ruta"><a href="mis-puntos.html">Recompensas</a> › <span id="miga-canje">20 copias gratis</span></nav>
+      <h1 class="nombre-producto mt-8" id="titulo-canje">Confirmar canje</h1>
+
+      <section class="tarjeta recompensa mt-8">
+        <img id="img-canje" src="img/comercios/oferta-copias.png" alt="">
+        <div><h2 id="nombre-canje">20 copias gratis</h2><p id="comercio-canje">Centro de impresión digital UCA</p><strong id="costo-canje">150 pts</strong></div>
+      </section>
+
+      <div id="vista-confirmar">
+        <div class="tarjeta resumen resumen--grande mt-20">
+          <div>Tus puntos<strong id="tus-puntos">357 pts</strong></div>
+          <div>Costo de la recompensa<strong class="rojo" id="costo">−150 pts</strong></div>
+          <div>Te quedarán<strong id="quedan">207 pts</strong></div>
+        </div>
+        <p class="nota-centrada mt-20" style="font-size:12px;">Se generará un código QR. Muéstralo en el comercio.</p>
+        <div class="botones mt-20">
+          <button class="boton boton--rojo" type="button" id="confirmar-canje">Confirmar canje</button>
+          <a class="boton boton--borde" href="mis-puntos.html">Cancelar</a>
+        </div>
+      </div>
+
+      <div id="vista-faltan" class="oculto">
+        <div class="tarjeta progreso mt-20">
+          <div class="progreso__fila"><h2>Tu progreso</h2><span id="progreso-texto">357 / 500</span></div>
+          <div class="barra" style="margin-top:12px;"><span id="barra-canje" style="width:71%;"></span></div>
+          <p class="mt-16" style="font-size:14px;font-weight:700;" id="faltan-texto">Te faltan 143 puntos.</p>
+          <p style="font-size:11.5px;color:var(--gris);">Suma puntos comprando en comercios participantes.</p>
+        </div>
+        <div class="botones mt-20">
+          <span class="boton boton--rojo" aria-disabled="true">Canjear (faltan puntos)</span>
+          <a class="boton boton--borde" href="mapa.html?cat=lavanderias">Ver comercios participantes</a>
+        </div>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

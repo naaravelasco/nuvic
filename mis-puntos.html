@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis puntos · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-pagina">Mis puntos</h1>
+      <p class="bajada">Tu saldo y tu historial</p>
+
+      <section class="saldo mt-12">
+        <p class="saldo__tienes">Tienes</p>
+        <p class="saldo__cifra"><strong id="saldo">357</strong><span>puntos</span></p>
+        <div class="barra" role="progressbar" aria-valuenow="357" aria-valuemin="0" aria-valuemax="500" aria-label="Avance al Nivel Ahorrador"><span id="barra-puntos" style="width: 71.4%;"></span></div>
+        <p class="saldo__falta" id="falta">Te faltan 143 para Nivel Ahorrador</p>
+      </section>
+
+      <div class="botones-dobles mt-16">
+        <a class="boton boton--rojo" href="canje.html?r=copias">Canjear</a>
+        <a class="boton boton--borde" href="escanear-qr.html">Escanear QR</a>
+      </div>
+
+      <h2 class="titulo-precios mt-24">Historial de puntos</h2>
+      <div class="lista mt-8" id="historial">
+        <div class="tarjeta movimiento"><div><h3>Farmacia REAL</h3><p>Compra · Hoy 10:42 am</p></div><strong>+12 pts</strong></div>
+        <div class="tarjeta movimiento"><div><h3>Librería La Ibérica</h3><p>Compra · Ayer 1:15 pm</p></div><strong>+8 pts</strong></div>
+        <div class="tarjeta movimiento"><div><h3>20 copias gratis</h3><p>Canje · 28 oct</p></div><strong class="resta">−150 pts</strong></div>
+        <div class="tarjeta movimiento"><div><h3>Platinum Barbershop</h3><p>Compra · 27 oct</p></div><strong>+20 pts</strong></div>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

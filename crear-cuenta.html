@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-cuenta">Crear cuenta</h1>
+      <p class="bajada">Con tu carné y correo institucional UCA.</p>
+
+      <form class="formulario mt-24" id="form-crear" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ana Martínez" autocomplete="name">
+        </div>
+        <div class="campo">
+          <label for="carne">Carné UCA</label>
+          <input type="text" id="carne" name="carne" placeholder="00123425" inputmode="numeric" maxlength="8">
+        </div>
+        <div class="campo">
+          <label for="correo">Correo institucional</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@uca.edu.sv" autocomplete="email">
+        </div>
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" placeholder="Mínimo 8 caracteres" autocomplete="new-password">
+        </div>
+        <label class="casilla mt-16"><input type="checkbox" name="terminos">Acepto los términos y la política de privacidad</label>
+        <p class="alerta oculto" id="error-crear" role="alert">Revisa los campos marcados y acepta los términos.</p>
+        <button class="boton boton--coral mt-16" type="submit">Crear cuenta</button>
+      </form>
+
+      <p class="pie-formulario mt-24">¿Ya tienes cuenta?<a href="login.html">Inicia sesión</a></p>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/cuenta.js"></script>
+</body>
+</html>

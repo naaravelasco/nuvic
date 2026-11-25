@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lapicero azul · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <nav class="migas" aria-label="Ruta"><a href="productos.html">Productos</a> › Comparar</nav>
+      <h1 class="nombre-producto mt-8">Lapicero azul</h1>
+      <p class="bajada" style="font-size:12.5px;">Caja de 12 unidades</p>
+
+      <div class="alerta-grande mt-12" role="status">
+        <span class="alerta-grande__icono" aria-hidden="true">!</span>
+        <div><h2 style="font-size:13.5px;">Librería La Ibérica ya no lo tiene</h2><p>Se agotó hace unos minutos</p></div>
+      </div>
+
+      <div class="lista mt-20" style="gap:12px;">
+        <div class="tarjeta opcion-comercio opcion-comercio--mejor">
+          <h3>Librería y Papelería UCA</h3><p>Entrada sur · 600 m</p><span class="etiqueta-degradado">Mejor precio</span><strong>$3.25</strong>
+        </div>
+        <div class="tarjeta opcion-comercio">
+          <h3>Centro de impresión digital UCA</h3><p>Biblioteca · 450 m</p><span class="estado estado--ok" style="margin-top:4px;">Disponible</span><strong>$3.40</strong>
+        </div>
+        <div class="tarjeta opcion-comercio apagada">
+          <h3>Librería La Ibérica</h3><p>Edificio central · 300 m</p><span class="estado estado--no" style="margin-top:4px;">No disponible</span><strong>$3.10</strong>
+        </div>
+      </div>
+
+      <div class="botones mt-24">
+        <a class="boton boton--rojo" href="lista-libreria.html">Ir a Librería y Papelería UCA</a>
+        <a class="boton boton--borde" href="membresia.html" style="font-size:13.5px;">Avisarme si vuelve en Librería</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transacción validada · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <div class="icono-exito mt-24"><svg width="44" height="32" viewBox="0 0 44 32" fill="none" aria-hidden="true"><path d="M4 16l12 12L40 4" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h1 class="titulo-centrado mt-16" style="font-size:22px;">Transacción validada</h1>
+      <p class="cifra-grande" id="ganados">+12</p>
+      <p class="texto-centrado" style="font-size:13.5px;">puntos sumados a tu cuenta</p>
+
+      <div class="tarjeta resumen mt-20">
+        <div>Comercio<strong>Farmacia Real</strong></div>
+        <div>Compra<strong>Paracetamol 500 mg · $10</strong></div>
+        <div>Puntos acumulados<strong id="acumulados">357 pts</strong></div>
+      </div>
+
+      <div class="botones mt-24">
+        <a class="boton boton--rojo" href="mis-puntos.html">Ver mis puntos</a>
+        <a class="boton boton--borde" href="productos.html">Seguir comparando</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>

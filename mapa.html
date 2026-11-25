@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de comercios · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado"></header>
+
+    <main class="contenido">
+      <h1 class="titulo-mapa">Mapa de comercios</h1>
+      <p class="bajada" style="font-size: 13px;">Toca un comercio para ver sus precios.</p>
+
+      <nav class="chips mt-8" id="chips" aria-label="Categorías"></nav>
+
+      <div class="mapa">
+        <img class="mapa__imagen" id="mapa-imagen" src="" alt="">
+        <span class="mapa__marca">Google Maps</span>
+        <div class="mapa__zoom">
+          <button type="button" aria-label="Acercar">+</button>
+          <button type="button" aria-label="Alejar">−</button>
+        </div>
+        <button class="mapa__ubicarme" type="button" aria-label="Mi ubicación">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <circle cx="10" cy="10" r="4" stroke="#4285F4" stroke-width="2"/>
+            <path d="M10 1v3M10 16v3M1 10h3M16 10h3" stroke="#4285F4" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <a class="tarjeta comercio mt-16" id="comercio" href="#">
+        <img class="comercio__foto" id="comercio-foto" src="" alt="">
+        <div class="comercio__info">
+          <h2 class="comercio__nombre" id="comercio-nombre"></h2>
+          <p class="comercio__distancia" id="comercio-distancia"></p>
+          <span class="etiqueta">Menor precio</span>
+        </div>
+        <p class="comercio__precio"><small>desde</small><strong id="comercio-precio"></strong></p>
+      </a>
+
+      <div class="botones-dobles mt-12">
+        <a class="boton boton--borde" id="como-llegar" href="#" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="boton boton--azul" id="ver-precios" href="#">Ver precios</a>
+      </div>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+</html>

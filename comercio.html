@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmacia Real · Nuvic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+  <div class="app">
+    <header id="encabezado" data-sin-entrar></header>
+
+    <main class="contenido" style="padding-top: 18px;">
+      <nav class="migas" aria-label="Ruta">
+        <a href="index.html">Inicio</a> › <a href="mapa.html?cat=farmacias">Mapa</a> › Farmacia Real
+      </nav>
+
+      <img class="portada mt-12" src="img/portada-farmacia-real.jpg" alt="Fachada de Farmacia Real">
+
+      <h1 class="nombre-comercio mt-12">Farmacia Real</h1>
+      <p class="bajada" style="font-size: 12.5px;">Farmacia · 0.2 km de ti</p>
+
+      <div class="tarjeta datos-comercio mt-12">
+        <div><img src="img/ico-ubicacion.svg" alt="">Calle el Mediterraneo</div>
+        <div><img src="img/ico-horario.svg" alt="">Lun–Dom 7:00 am – 6:00 pm</div>
+      </div>
+
+      <h2 class="titulo-precios mt-20">Precios en este comercio</h2>
+      <div class="lista mt-8">
+        <a class="tarjeta fila fila--producto" href="comparar.html">
+          <img class="fila__foto" src="img/mini-paracetamol.svg" alt="">
+          <div class="fila__texto">
+            <h3 class="fila__nombre">Paracetamol 500 mg</h3>
+            <p class="fila__detalle">60g, 20 comprimidos</p>
+          </div>
+          <span class="fila__precio">$10</span>
+        </a>
+        <a class="tarjeta fila fila--producto" href="farmacia-real.html">
+          <img class="fila__foto" src="img/prod-vitamina.svg" alt="">
+          <div class="fila__texto">
+            <h3 class="fila__nombre">Vitamina C 2000 mg</h3>
+            <p class="fila__detalle">10 sachets</p>
+          </div>
+          <span class="fila__precio">$17.32</span>
+        </a>
+        <div class="tarjeta fila fila--producto">
+          <img class="fila__foto" src="img/mini-alcohol-gel.svg" alt="">
+          <div class="fila__texto">
+            <h3 class="fila__nombre">Alcohol gel 120 ml</h3>
+            <p class="fila__detalle">Precio de referencia</p>
+          </div>
+          <span class="fila__precio">$1.90</span>
+        </div>
+        <div class="tarjeta fila fila--producto">
+          <img class="fila__foto" src="img/mini-ibuprofeno.svg" alt="">
+          <div class="fila__texto">
+            <h3 class="fila__nombre">Ibuprofeno 600 mg</h3>
+            <p class="fila__detalle">1 un. $ 1.60/un</p>
+          </div>
+          <span class="fila__precio">$1.60</span>
+        </div>
+      </div>
+
+      <a class="boton boton--rojo cta-centrada"
+         href="https://www.google.com/maps/search/Farmacia%20Real%20UCA%20San%20Salvador"
+         target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+    </main>
+
+    <footer id="pie"></footer>
+  </div>
+
+  <script src="js/datos.js"></script>
+  <script src="js/componentes.js"></script>
+</body>
+</html>
